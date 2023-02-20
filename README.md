@@ -1,4 +1,4 @@
-# Android device tree for TCL 5102L (Bangkok_USCC)
+# Android device tree for TCL A509DL (Bangkok_TF)
 
 ```
 #
