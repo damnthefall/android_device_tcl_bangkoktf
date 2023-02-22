@@ -6,9 +6,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/twrp_Bangkok_USCC.mk
+    $(LOCAL_DIR)/twrp_Bangkok_TF.mk
 
 COMMON_LUNCH_CHOICES := \
-    twrp_Bangkok_USCC-user \
-    twrp_Bangkok_USCC-userdebug \
-    twrp_Bangkok_USCC-eng
+    twrp_Bangkok_TF-user \
+    twrp_Bangkok_TF-userdebug \
+    twrp_Bangkok_TF-eng

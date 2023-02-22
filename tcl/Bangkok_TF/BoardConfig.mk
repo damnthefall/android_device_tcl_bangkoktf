@@ -5,7 +5,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/tcl/Bangkok_USCC
+DEVICE_PATH := device/tcl/Bangkok_TF
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
@@ -29,7 +29,7 @@ TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a53
 DEXPREOPT_GENERATE_APEX_IMAGE := true
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := bangkok_USCC
+TARGET_BOOTLOADER_BOARD_NAME := bangkok_TF
 TARGET_NO_BOOTLOADER := true
 
 # Display
@@ -48,11 +48,11 @@ BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
 BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_KERNEL_SEPARATED_DTBO := true
-TARGET_KERNEL_CONFIG := Bangkok_USCC_defconfig
-TARGET_KERNEL_SOURCE := kernel/tcl/Bangkok_USCC
+TARGET_KERNEL_CONFIG := Bangkok_TF_defconfig
+TARGET_KERNEL_SOURCE := kernel/tcl/Bangkok_TF
 
 # Kernel - prebuilt
-TARGET_FORCE_PREBUILT_KERNEL := true
+TARGET_FORCE_PREBUILT_KERNEL := false
 ifeq ($(TARGET_FORCE_PREBUILT_KERNEL),true)
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/kernel
 TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb.img

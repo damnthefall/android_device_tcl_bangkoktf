@@ -8,7 +8,7 @@
 
 set -e
 
-DEVICE=Bangkok_USCC
+DEVICE=Bangkok_TF
 VENDOR=tcl
 
 # Load extract_utils and do some sanity checks

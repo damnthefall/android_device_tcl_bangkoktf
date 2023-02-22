@@ -7,6 +7,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),Bangkok_USCC)
+ifeq ($(TARGET_DEVICE),Bangkok_TF)
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 endif
